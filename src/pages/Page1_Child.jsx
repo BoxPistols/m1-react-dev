@@ -1,15 +1,11 @@
-const Page1_Child = (props) => {
-    const { isOpen } = props
-    return (
-        <div>
-            <small>Page1_Child</small>
-            {isOpen ? (
-                <div>
-                    <h3>Open!</h3>
-                </div>
-            ) : null}
-        </div>
-    )
+import React from 'react'
+
+const style = {
+    background: 'khaki',
+    color: 'orange',
 }
 
-export default Page1_Child
+export const Page1_Child = (props) => {
+    const { isOpen } = props
+    return <div>{isOpen ? <div style={style}>Open!!</div> : <div>null</div>}</div>
+}

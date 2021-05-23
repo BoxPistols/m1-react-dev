@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import Page1_Child from './Page1_Child'
+import { Page1_Child } from './Page1_Child'
 
 export const Page1 = () => {
     const [count, setCount] = useState(0)
     const [text, setText] = useState('')
     const [open, setOpen] = useState(false)
 
+    /* Counter ------------------------------------------------------------------ */
     const onCounter = () => {
         setCount(count + 1)
     }
+    /* form text ---------------------------------------------------------------- */
     const onTextChange = (e) => {
         setText(e.target.value)
     }
+    /* Toggle ------------------------------------------------------------------- */
     const onClickToggle = () => {
         setOpen(!open)
     }
@@ -20,8 +23,9 @@ export const Page1 = () => {
         <div>
             <h1>Page1</h1>
             <h2>Get Child</h2>
-            <button onClick={onClickToggle}>onClickToggle</button>
+            {/* eslint-disable-next-line */}
             <Page1_Child isOpen={open} />
+            <button onClick={onClickToggle}> isOpen </button>
             <hr />
             <h2>useState</h2>
             <h3>{count}</h3>
