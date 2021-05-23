@@ -7,7 +7,7 @@ import './components/ModuleCss.module.scss'
 // import { Home } from './pages/Home'
 import { Page } from './pages/Page'
 
-function App() {
+function App () {
     return (
         <div className='App'>
             <header className='App-header'>
