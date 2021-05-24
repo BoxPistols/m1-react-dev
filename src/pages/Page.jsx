@@ -1,7 +1,5 @@
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
-
-import { Home } from './Home'
-import { Basic } from './Basic'
+import { BrowserRouter, Link } from 'react-router-dom'
+import { Router } from '../router/Router'
 
 const listStyle = {
     display: 'inline-flex',
@@ -22,16 +20,8 @@ export const Page = () => {
                         <Link to='/basic'>Basic</Link>
                     </li>
                 </ul>
+                <Router />
             </div>
-            {/* Switch */}
-            <Switch>
-                <Route exact path='/'>
-                    <Home />
-                </Route>
-                <Route path='/basic'>
-                    <Basic />
-                </Route>
-            </Switch>
         </BrowserRouter>
     )
 }
