@@ -2,7 +2,6 @@
 import cssModule from '../components/ModuleCss.module.scss'
 //  Styled Components
 import styled from 'styled-components'
-import { Emotion } from '../components/Emotion'
 // Emotion
 /** @jsxRuntime classic */
 /** @jsx jsx */
@@ -29,7 +28,7 @@ const emotionInline = css({
     color: 'khaki',
 })
 
-const Styles = () => {
+export const Styles = () => {
     return (
         <div>
             <h1>Styles / CSS </h1>
@@ -67,5 +66,3 @@ const Styles = () => {
         </div>
     )
 }
-
-export default Styles
