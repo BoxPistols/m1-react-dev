@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { Page1_Child } from './Page1_Child'
 
 export const Page1 = () => {
@@ -20,6 +20,9 @@ export const Page1 = () => {
     }
     /* useCallback: 関数のメモ化 ----------------------------------------------------------------- */
     const onClickClose = useCallback(() => setOpen(false), [setOpen])
+
+    const temp = useMemo(() => 1 + 2, [])
+    console.log(temp)
 
     return (
         <div>
