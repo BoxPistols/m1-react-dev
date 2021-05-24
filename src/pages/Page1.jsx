@@ -26,7 +26,7 @@ export const Page1 = () => {
 
     return (
         <div>
-            <h1>Page1</h1>
+            <h1>Page1 / Rendering</h1>
             <h2>Get Child</h2>
             {/* eslint-disable-next-line */}
             <Page1_Child isOpen={open} isClose={onClickClose} />
