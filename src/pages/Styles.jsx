@@ -1,3 +1,4 @@
+import React from 'react'
 //  CSS Module
 import cssModule from '../components/ModuleCss.module.scss'
 //  Styled Components
