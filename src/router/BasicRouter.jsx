@@ -1,3 +1,4 @@
+import React from 'react'
 import { Rendering } from '../pages/Rendering'
 import { Styles } from '../pages/Styles'
 import { Page2 } from '../pages/Page2'
