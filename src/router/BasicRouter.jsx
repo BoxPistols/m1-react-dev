@@ -1,21 +1,21 @@
-import { Page2 } from '../pages/Page2'
 import { Rendering } from '../pages/Rendering'
 import { Styles } from '../pages/Styles'
+import { Page2 } from '../pages/Page2'
 
 export const BasicRouter = [
     {
-        path: '/rendering',
+        path: 'rendering',
         exact: true,
         children: <Rendering />,
     },
     {
-        path: '/page2',
-        exact: false,
-        children: <Page2 />,
-    },
-    {
-        path: '/styles',
+        path: 'styles',
         exact: false,
         children: <Styles />,
+    },
+    {
+        path: 'page2',
+        exact: false,
+        children: <Page2 />,
     },
 ]
