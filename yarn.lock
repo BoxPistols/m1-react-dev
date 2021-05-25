@@ -6913,6 +6913,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
+kind@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/kind/-/kind-0.1.0.tgz#a6e6bb367a92b8015c5b3e58d3b59cc48ec829ff"
+  integrity sha1-pua7NnqSuAFcWz5Y07WcxI7IKf8=
+
 kleur@^2.0.1:
   version "2.0.2"
   resolved "https://registry.npmjs.org/kleur/-/kleur-2.0.2.tgz"

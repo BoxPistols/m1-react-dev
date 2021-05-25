@@ -15,7 +15,10 @@ export const Page = () => {
             <div>
                 <ul style={listStyle}>
                     <li style={list}>
-                        <Link to='/'>Home</Link>
+                        <Link to='/'>Index</Link>
+                    </li>
+                    <li style={list}>
+                        <Link to='/home/123'>Home</Link>
                     </li>
                     <li style={list}>
                         <Link to='/basic'>Basic</Link>

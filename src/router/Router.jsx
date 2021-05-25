@@ -7,7 +7,7 @@ export const Router = () => {
     return (
         <>
             <Switch>
-                <Route exact path='/'>
+                <Route exact path='/home/:id'>
                     <Home />
                 </Route>
                 <Route path='/basic'>
