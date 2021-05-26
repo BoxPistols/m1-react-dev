@@ -18,9 +18,6 @@ export const Page = () => {
                         <Link to='/'>Index</Link>
                     </li>
                     <li style={list}>
-                        <Link to='/home/123'>Home</Link>
-                    </li>
-                    <li style={list}>
                         <Link to='/basic'>Basic</Link>
                     </li>
                 </ul>
