@@ -17,6 +17,9 @@ export const Page2 = () => {
                     <li>
                         <Link to='/basic/page2/000'>PageSub1 000</Link>
                     </li>
+                    <li>
+                        <Link to='/basic/page2/user?name=yamada'>PageSub1 Query</Link>
+                    </li>
                 </ul>
                 {/* Set  Routing*/}
                 <Switch>
