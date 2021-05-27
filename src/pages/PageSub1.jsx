@@ -1,12 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-export const Home = () => {
+export const PageSub1 = () => {
     const { id } = useParams()
-    // console.log(id)
+    console.log(id)
     return (
         <div>
-            <h1>Home</h1>
+            <p>PageSub1</p>
             <div>
                 <p>ID: {id}</p>
             </div>
