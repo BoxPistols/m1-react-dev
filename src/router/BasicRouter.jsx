@@ -16,7 +16,7 @@ export const BasicRouter = [
     },
     {
         path: 'page2',
-        exact: false,
+        exact: true,
         children: <Page2 />,
     },
 ]

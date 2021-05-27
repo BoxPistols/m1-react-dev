@@ -12,10 +12,10 @@ export const Page2 = () => {
                         <Link to='/basic/page2/sub1'>PageSub1</Link>
                     </li>
                     <li>
-                        <Link to='/basic/page2/sub1/xxx'>PageSub1 xxx</Link>
+                        <Link to='/basic/page2/xxx'>PageSub1 xxx</Link>
                     </li>
                     <li>
-                        <Link to='/basic/page2/sub1/000'>PageSub1 000</Link>
+                        <Link to='/basic/page2/000'>PageSub1 000</Link>
                     </li>
                 </ul>
                 {/* Set  Routing*/}
@@ -23,7 +23,7 @@ export const Page2 = () => {
                     <Route path='/basic/page2/sub1'>
                         <PageSub1 />
                     </Route>
-                    <Route path='/basic/page2/sub1/:id'>
+                    <Route path='/basic/page2/:id'>
                         <PageSub1 />
                     </Route>
                 </Switch>
