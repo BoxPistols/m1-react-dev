@@ -2,6 +2,9 @@ import React from 'react'
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
 import { PageSub1 } from './PageSub1'
 export const Page2 = () => {
+    const arr = [...Array(100).keys()]
+    console.log(arr)
+    const hoge = 'StateHoge'
     return (
         <div>
             <h1>Page2</h1>
@@ -9,10 +12,10 @@ export const Page2 = () => {
                 {/* View HTML */}
                 <ul>
                     <li>
-                        <Link to='/basic/page2/sub1'>PageSub1</Link>
+                        <Link to={{ pathname: '/basic/page2/sub1', state: arr }}>PageSub1</Link>
                     </li>
                     <li>
-                        <Link to='/basic/page2/xxx'>PageSub1 xxx</Link>
+                        <Link to={{ pathname: '/basic/page2/xxx', state: hoge }}>PageSub1 xxx</Link>
                     </li>
                     <li>
                         <Link to='/basic/page2/000'>PageSub1 000</Link>
