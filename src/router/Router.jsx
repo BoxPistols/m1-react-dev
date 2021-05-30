@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Index } from '../pages/Index'
 import { Basic } from '../pages/Basic'
+import { Atomic } from '../pages/Atomic'
 import { Page404 } from '../pages/Page404'
 
 export const Router = () => {
@@ -16,6 +17,9 @@ export const Router = () => {
                 </Route>
                 <Route path='/basic'>
                     <Basic />
+                </Route>
+                <Route path='/atomic'>
+                    <Atomic />
                 </Route>
                 <Route path='*'>
                     <Page404 />

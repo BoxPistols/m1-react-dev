@@ -20,6 +20,9 @@ export const Page = () => {
                     <li style={list}>
                         <Link to='/basic'>Basic</Link>
                     </li>
+                    <li style={list}>
+                        <Link to='/atomic'>Atomic</Link>
+                    </li>
                 </ul>
                 <Router />
             </div>
