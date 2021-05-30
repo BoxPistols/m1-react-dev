@@ -12,17 +12,14 @@ const list = {
 export const Index = () => {
     return (
         <div>
+            index
             <BrowserRouter>
                 <div>
                     <ul style={listStyle}>
                         <li style={list}>
-                            <Link to='/'>Index</Link>
-                        </li>
-                        <li style={list}>
-                            <Link to='/basic'>Basic</Link>
+                            <Link to='/'>Top</Link>
                         </li>
                     </ul>
-                    <Router />
                 </div>
             </BrowserRouter>
         </div>
