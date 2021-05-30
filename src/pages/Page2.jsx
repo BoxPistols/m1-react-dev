@@ -1,10 +1,14 @@
 import React from 'react'
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Link, Switch, Route, useHistory, withRouter } from 'react-router-dom'
 import { PageSub1 } from './PageSub1'
 export const Page2 = () => {
     const arr = [...Array(100).keys()]
     console.log(arr)
     const hoge = 'StateHoge'
+
+    const history = useHistory()
+    const clickHistoryPush = () => history.push('/basic/page2/sub1')
+
     return (
         <div>
             <h1>Page2</h1>
@@ -24,6 +28,9 @@ export const Page2 = () => {
                         <Link to='/basic/page2/user?name=yamada'>PageSub1 Query</Link>
                     </li>
                 </ul>
+                <div>
+                    <button onClick={clickHistoryPush}>clickHistoryPush</button>
+                </div>
                 {/* Set  Routing*/}
                 <Switch>
                     <Route path='/basic/page2/sub1'>
