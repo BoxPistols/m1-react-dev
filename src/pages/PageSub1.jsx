@@ -1,5 +1,13 @@
 import React from 'react'
 import { useParams, useLocation, useHistory } from 'react-router-dom'
+import styled from 'styled-components'
+
+export const Container = styled.div`
+    overflow-wrap: break-word;
+    max-width: 80vw;
+    margin: auto;
+    font-size: 14px;
+`
 
 export const PageSub1 = () => {
     const { id } = useParams()
@@ -11,7 +19,7 @@ export const PageSub1 = () => {
     const clickHistoryBack = () => history.goBack()
 
     return (
-        <div>
+        <Container>
             <p>PageSub1</p>
             <div>
                 <p>State: {state}</p>
@@ -21,6 +29,6 @@ export const PageSub1 = () => {
             <div>
                 <button onClick={clickHistoryBack}>clickHistoryBack</button>
             </div>
-        </div>
+        </Container>
     )
 }
