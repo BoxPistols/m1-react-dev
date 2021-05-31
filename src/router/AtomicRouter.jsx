@@ -2,6 +2,7 @@ import React from 'react'
 import { Btns } from '../components/Atomic/Atoms/Buttons/Btns.jsx'
 import { Forms } from '../components/Atomic/Molecules/Forms/Forms.jsx'
 import { UserCard } from '../components/Atomic/Organisms/Users/UserCard.jsx'
+import { DefaultLayout } from '../components/Atomic/Templates/DefaultLayout.jsx'
 
 const userData = {
     img: {
@@ -31,5 +32,10 @@ export const AtomicRouter = [
         path: 'cards',
         exact: false,
         children: <UserCard user={userData} />,
+    },
+    {
+        path: 'layout',
+        exact: false,
+        children: <DefaultLayout children={'head'} />,
     },
 ]
