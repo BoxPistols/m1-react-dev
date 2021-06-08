@@ -4,6 +4,7 @@ import { UserIconWithName } from '../../Molecules/Users/UserIconWithName'
 
 export const UserCard = (props) => {
     const { user } = props
+
     return (
         <Card>
             <SC_CardsGrid>

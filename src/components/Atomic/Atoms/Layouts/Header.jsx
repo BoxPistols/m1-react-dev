@@ -3,7 +3,7 @@ import { BrowserRouter, Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SC_Header = styled.header`
-    background-color: darkgray;
+    background-color: #abc;
     position: absolute;
     top: 0;
     width: 100vw;
