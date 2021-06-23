@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Link, Switch, Route, useHistory } from 'react-router-dom'
 import { BtnPrimary } from '../components/Atomic/Atoms/Buttons/BtnPrimary'
 import { BtnSecondary } from '../components/Atomic/Atoms/Buttons/BtnSecondary'
 import { AtomicRouter } from '../router/AtomicRouter'
@@ -13,10 +13,15 @@ const list = {
 }
 
 export const Atomic = () => {
+    let history = useHistory()
+
+    const onClickAdmin = () => history.push('/atomic/cards')
+    const onClickUser = () => history.push('/atomic/cards')
+
     return (
         <div>
-            <BtnPrimary>Admin</BtnPrimary>
-            <BtnSecondary>User</BtnSecondary>
+            <BtnPrimary onClick={onClickAdmin}>Admin</BtnPrimary>
+            <BtnSecondary onClick={onClickUser}>User</BtnSecondary>
 
             <h2>Atomic</h2>
             <BrowserRouter>

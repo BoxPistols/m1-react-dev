@@ -48,17 +48,17 @@ const users = [...Array(12).keys()].map((val) => {
 export const AtomicRouter = [
     {
         path: 'buttons',
-        exact: false,
+        exact: true,
         children: <Btns />,
     },
     {
         path: 'forms',
-        exact: false,
+        exact: true,
         children: <Forms />,
     },
     {
         path: 'cards',
-        exact: false,
+        exact: true,
         children: (
             <SCardList>
                 {users.map((user) => (
@@ -70,7 +70,7 @@ export const AtomicRouter = [
     },
     {
         path: 'layout',
-        exact: false,
+        exact: true,
         children: <DefaultLayout children={'head'} />,
     },
 ]

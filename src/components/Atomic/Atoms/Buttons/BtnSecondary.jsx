@@ -8,6 +8,6 @@ const ButtonExtend = styled(BtnBase)`
 `
 
 export const BtnSecondary = (props) => {
-    const { children } = props
-    return <ButtonExtend>{children}</ButtonExtend>
+    const { children, onClick } = props
+    return <ButtonExtend onClick={onClick}>{children}</ButtonExtend>
 }

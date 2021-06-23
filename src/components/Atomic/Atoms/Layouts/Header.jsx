@@ -18,7 +18,7 @@ export const Header = () => {
     return (
         <BrowserRouter>
             <SC_Header>
-                <SC_HeaderLink to='/'>Head</SC_HeaderLink>
+                <SC_HeaderLink to='/'>Home</SC_HeaderLink>
                 <SC_HeaderLink to='/users'>Users</SC_HeaderLink>
             </SC_Header>
         </BrowserRouter>
