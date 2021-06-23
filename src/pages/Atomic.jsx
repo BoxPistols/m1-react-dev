@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
+import { BtnPrimary } from '../components/Atomic/Atoms/Buttons/BtnPrimary'
+import { BtnSecondary } from '../components/Atomic/Atoms/Buttons/BtnSecondary'
 import { AtomicRouter } from '../router/AtomicRouter'
 
 const listStyle = {
@@ -13,6 +15,9 @@ const list = {
 export const Atomic = () => {
     return (
         <div>
+            <BtnPrimary>Admin</BtnPrimary>
+            <BtnSecondary>User</BtnSecondary>
+
             <h2>Atomic</h2>
             <BrowserRouter>
                 <div>
@@ -25,6 +30,18 @@ export const Atomic = () => {
                     </ul>
                 </div>
                 <Switch>
+                    <Route
+                        path='/atomic'
+                        render={({ match: { url } }) => (
+                            <Switch>
+                                {AtomicRouter.map((r) => (
+                                    <Route key={r.path} path={`${url}/${r.path}`} exact={r.exact}>
+                                        {r.children}
+                                    </Route>
+                                ))}
+                            </Switch>
+                        )}
+                    />
                     <Route
                         path='/atomic'
                         render={({ match: { url } }) => (

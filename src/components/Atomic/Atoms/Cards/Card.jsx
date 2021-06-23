@@ -7,8 +7,7 @@ export const Card = (props) => {
 }
 
 const SCard = styled.div`
-    background: #112;
-    padding: 24px;
+    padding: 12px;
 `
 
 export const SC_CardsGrid = styled.div`
@@ -17,7 +16,7 @@ export const SC_CardsGrid = styled.div`
 `
 
 export const SC_Card = styled.div`
-    margin: 24px 12px;
+    margin: 12px 8px;
     padding: 32px 20px 0;
     max-width: 240px;
     font-size: 14px;
