@@ -7,7 +7,7 @@ export const Card = (props) => {
 }
 
 const SCard = styled.div`
-    padding: 12px;
+    padding: 8px;
 `
 
 export const SC_CardsGrid = styled.div`
@@ -16,12 +16,12 @@ export const SC_CardsGrid = styled.div`
 `
 
 export const SC_Card = styled.div`
-    margin: 12px 8px;
-    padding: 32px 20px 0;
+    margin: 4px;
+    padding: 24px 16px 0;
     max-width: 240px;
     font-size: 14px;
     border: 1px solid #ccc;
-    border-radius: 16px;
+    border-radius: 12px;
     background: rgb(66 72 82 / 60%);
     box-shadow: rgb(4 15 24 / 84%) 4px 4px 12px;
     img {

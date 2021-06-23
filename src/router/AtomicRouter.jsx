@@ -11,6 +11,7 @@ const SCardList = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding: 24px;
     background: #212;
 `
 
@@ -30,13 +31,13 @@ const SCardList = styled.div`
 // for Loop Card
 const users = [...Array(12).keys()].map((val) => {
     return {
-        id: 1,
+        id: val,
         img: {
             url: 'https://picsum.photos/240/240/?image=433',
             size: 100,
             alt: 'kuma',
         },
-        name: 'Kuma San',
+        name: `Kuma San - ${val + 1}`,
         mail: 'xxxyyy@zzz.com',
         tel: '090-4444-7777',
         company: 'Max Co.',
@@ -61,7 +62,7 @@ export const AtomicRouter = [
         children: (
             <SCardList>
                 {users.map((user) => (
-                    <UserCard key={user.index} user={user} />
+                    <UserCard key={user.id} user={user} />
                 ))}
                 {/* <UserCard user={userData} /> */}
             </SCardList>
