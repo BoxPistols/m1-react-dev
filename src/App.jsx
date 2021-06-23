@@ -2,13 +2,16 @@ import React from 'react'
 import './App.css'
 import './components/ModuleCss.module.scss'
 import { Page } from './pages/Page'
+import { UserProvider } from './providers/UserProvider'
 
-function App () {
+function App() {
     return (
         <div className='App'>
-            <header className='App-header'>
-                <Page />
-            </header>
+            <UserProvider>
+                <header className='App-header'>
+                    <Page />
+                </header>
+            </UserProvider>
         </div>
     )
 }
