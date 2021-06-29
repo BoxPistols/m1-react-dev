@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Switch, Route, useHistory, withRouter } from 'reac
 import { PageSub1 } from './PageSub1'
 export const Page2 = () => {
     const arr = [...Array(100).keys()]
-    console.log(arr)
+    // console.log(arr)
     const hoge = 'StateHoge'
 
     const history = useHistory()

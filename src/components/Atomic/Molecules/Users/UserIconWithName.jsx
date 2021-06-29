@@ -4,8 +4,10 @@ import { UserContext } from '../../../../providers/UserProvider'
 
 export const UserIconWithName = (props) => {
     const { img, size, alt, name } = props
-    const context = useContext(UserContext)
-    console.log(context)
+    const { userInfo } = useContext(UserContext)
+    const isAdmin = userInfo ? userInfo.isAdmin : false
+
+    const editUser = () => alert('edit do')
 
     return (
         <SContainer primary>
@@ -13,11 +15,22 @@ export const UserIconWithName = (props) => {
             <p data-primary data-level='info' className='card__name'>
                 {name}
             </p>
+            {isAdmin && <SEdit onClick={editUser}>編集</SEdit>}
         </SContainer>
     )
 }
 
 /* Styling ------------------------------------------------------------------ */
+
+const SEdit = styled.div`
+    margin: 0;
+    padding: 0 12px;
+    height: 1.5em;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+`
+
 export const SContainer = styled.div`
     img {
         border-radius: 50%;

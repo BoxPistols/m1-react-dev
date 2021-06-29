@@ -10,13 +10,13 @@ const style = {
 export const Rendering_Child = memo((props) => {
     // 親から命令してもらうための仮引数
     const { isOpen, isClose } = props
-    console.log('レンダリング Rendering_Child')
+    // console.log('レンダリング Rendering_Child')
 
     const data = [...Array(3).keys()]
-    console.log(data)
+    // console.log(data)
 
     data.forEach(() => {
-        console.log('xxx...')
+        // console.log('xxx...')
     })
     return (
         <div>

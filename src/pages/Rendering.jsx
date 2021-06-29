@@ -23,7 +23,7 @@ export const Rendering = () => {
     const onClickClose = useCallback(() => setOpen(false), [setOpen])
 
     const temp = useMemo(() => 1 + 2, [])
-    console.log(temp)
+    // console.log(temp)
 
     return (
         <div>

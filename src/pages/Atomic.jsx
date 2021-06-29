@@ -1,7 +1,8 @@
-import React from 'react'
-import { BrowserRouter, Link, Switch, Route, useHistory } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { BrowserRouter, Link, Switch, Route, useHistory, useLocation } from 'react-router-dom'
 import { BtnPrimary } from '../components/Atomic/Atoms/Buttons/BtnPrimary'
 import { BtnSecondary } from '../components/Atomic/Atoms/Buttons/BtnSecondary'
+import { UserContext } from '../providers/UserProvider'
 import { AtomicRouter } from '../router/AtomicRouter'
 
 const listStyle = {
@@ -15,8 +16,20 @@ const list = {
 export const Atomic = () => {
     let history = useHistory()
 
-    const onClickAdmin = () => history.push('/atomic/cards')
-    const onClickUser = () => history.push('/atomic/cards')
+    const { setUserInfo } = useContext(UserContext)
+
+    const onClickAdmin = () => {
+        setUserInfo({ isAdmin: true })
+        history.push('/atomic/cards')
+    }
+    const onClickUser = () => {
+        setUserInfo({ isAdmin: false })
+        history.push('/atomic/cards')
+    }
+
+    // const { state } = useLocation()
+    // const isAdmin = state ? state.isAdmin : false
+    // console.log(state)
 
     return (
         <div>
