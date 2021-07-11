@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { BrowserRouter, Link, Switch, Route, useHistory, useLocation } from 'react-router-dom'
+import { BrowserRouter, Link, Switch, Route, useHistory } from 'react-router-dom'
 import { BtnPrimary } from '../components/Atomic/Atoms/Buttons/BtnPrimary'
 import { BtnSecondary } from '../components/Atomic/Atoms/Buttons/BtnSecondary'
 import { UserContext } from '../providers/UserProvider'

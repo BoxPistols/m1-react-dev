@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, Switch, Route, useHistory, withRouter } from 'react-router-dom'
+import { BrowserRouter, Link, Switch, Route, useHistory } from 'react-router-dom'
 import { PageSub1 } from './PageSub1'
 export const Page2 = () => {
     const arr = [...Array(100).keys()]

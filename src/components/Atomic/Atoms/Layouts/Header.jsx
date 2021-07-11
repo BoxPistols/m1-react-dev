@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const SC_Header = styled.header`
+const ScHeader = styled.header`
     background-color: #abc;
     position: absolute;
     top: 0;
@@ -10,17 +10,17 @@ const SC_Header = styled.header`
     font-size: 16px;
 `
 
-const SC_HeaderLink = styled(Link)`
+const ScHeaderLink = styled(Link)`
     margin: 0 12px;
 `
 
 export const Header = () => {
     return (
         <BrowserRouter>
-            <SC_Header>
-                <SC_HeaderLink to='/'>Home</SC_HeaderLink>
-                <SC_HeaderLink to='/users'>Users</SC_HeaderLink>
-            </SC_Header>
+            <ScHeader>
+                <ScHeaderLink to='/'>Home</ScHeaderLink>
+                <ScHeaderLink to='/users'>Users</ScHeaderLink>
+            </ScHeader>
         </BrowserRouter>
     )
 }

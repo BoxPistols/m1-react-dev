@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, SC_CardsGrid, SC_Card, SC_dl } from '../../Atoms/Cards/Card'
+import { Card, ScCardsGrid, ScCard, ScDl } from '../../Atoms/Cards/Card'
 import { UserIconWithName } from '../../Molecules/Users/UserIconWithName'
 
 export const UserCard = (props) => {
@@ -7,10 +7,10 @@ export const UserCard = (props) => {
 
     return (
         <Card>
-            <SC_CardsGrid>
-                <SC_Card>
+            <ScCardsGrid>
+                <ScCard>
                     <UserIconWithName img={user.img.url} size={user.img.size} alt={user.img.alt} name={user.name} />
-                    <SC_dl>
+                    <ScDl>
                         <dt>Mail </dt>
                         <dd> {user.mail}</dd>
                         <dt>Tel</dt>
@@ -19,9 +19,9 @@ export const UserCard = (props) => {
                         <dd>{user.company}</dd>
                         <dt>Web</dt>
                         <dd>{user.url}</dd>
-                    </SC_dl>
-                </SC_Card>
-            </SC_CardsGrid>
+                    </ScDl>
+                </ScCard>
+            </ScCardsGrid>
         </Card>
     )
 }

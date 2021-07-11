@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback } from 'react'
 import { Rendering_Child } from './Rendering_Child'
 
 export const Rendering = () => {
@@ -22,7 +22,7 @@ export const Rendering = () => {
     /* useCallback: 関数のメモ化 ----------------------------------------------------------------- */
     const onClickClose = useCallback(() => setOpen(false), [setOpen])
 
-    const temp = useMemo(() => 1 + 2, [])
+    // const temp = useMemo(() => 1 + 2, [])
     // console.log(temp)
 
     return (

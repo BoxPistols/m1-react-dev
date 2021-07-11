@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SC_Footer = styled.footer`
+const ScFooter = styled.footer`
     background-color: darkgray;
     position: absolute;
     bottom: 0;
@@ -10,5 +10,5 @@ const SC_Footer = styled.footer`
     text-align: center;
 `
 export const Footer = () => {
-    return <SC_Footer>&copy; 2021 dev Inc.</SC_Footer>
+    return <ScFooter>&copy; 2021 dev Inc.</ScFooter>
 }

@@ -3,6 +3,7 @@ import { Rendering } from '../pages/Rendering'
 import { Styles } from '../pages/Styles'
 import { Page2 } from '../pages/Page2'
 import { PropTypePage } from '../pages/PropTypePage'
+import { Redux } from '../pages/Redux'
 
 export const BasicRouter = [
     {
@@ -21,8 +22,13 @@ export const BasicRouter = [
         children: <Page2 />,
     },
     {
-        path: 'PropTypePage',
+        path: 'PropType',
         exact: true,
         children: <PropTypePage />,
+    },
+    {
+        path: 'Redux',
+        exact: false,
+        children: <Redux />,
     },
 ]

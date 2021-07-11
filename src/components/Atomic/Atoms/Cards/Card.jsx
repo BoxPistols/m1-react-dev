@@ -3,19 +3,15 @@ import styled from 'styled-components'
 
 export const Card = (props) => {
     const { children } = props
-    return <SCard>{children}</SCard>
+    return <ScCard>{children}</ScCard>
 }
 
-const SCard = styled.div`
-    padding: 8px;
-`
-
-export const SC_CardsGrid = styled.div`
+export const ScCardsGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
 `
 
-export const SC_Card = styled.div`
+export const ScCard = styled.div`
     margin: 4px;
     padding: 24px 16px 0;
     max-width: 240px;
@@ -28,7 +24,7 @@ export const SC_Card = styled.div`
         width: 100%;
     }
 `
-export const SC_dl = styled.dl`
+export const ScDl = styled.dl`
     text-align: left;
     dt {
         float: left;

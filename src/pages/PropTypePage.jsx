@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, css } from '@emotion/react'
+import { jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 import PropTypes from 'prop-types'
 import { lighten, between, backgroundImages } from 'polished'
