@@ -42,7 +42,7 @@ const User = (props) => {
 
 User.propTypes = {
     name: PropTypes.string,
-    age: PropTypes.number.isRequired,
+    age: PropTypes.number,
 }
 
 //  ===== Style =====
@@ -56,7 +56,8 @@ const EmStyled = styled.div`
     padding: 12px;
 `
 const EmUl = styled.ul`
-    font-size: ${between('14px', '20px', '300px', '800px')};
+    font-size: ${between('14px', '24px', '320px', '1280px')};
     color: ${lighten(0.35, 'orange')};
-    ${backgroundImages('linear-gradient(#222,#999)')}
+    padding: 24px;
+    ${backgroundImages('linear-gradient(purple,orange)')}
 `
