@@ -1,13 +1,13 @@
-import { INCREMENT, DECREMENT } from '../actions'
+import { PLUS, MINUS } from '../actions'
 
-const INITIAL_STATE = { value: 0 }
+const INITIAL_STATE = { num: 0 }
 
-export default (state = INITIAL_STATE, action) => {
+export const count = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case INCREMENT:
-            return { value: state.value + 1 }
-        case DECREMENT:
-            return { value: state.value - 1 }
+        case PLUS:
+            return state + action.payload.num
+        case MINUS:
+            return state - action.payload.num
         default:
             return state
     }
