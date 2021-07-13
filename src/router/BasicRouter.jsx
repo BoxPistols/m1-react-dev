@@ -4,6 +4,7 @@ import { Styles } from '../pages/Styles'
 import { Page2 } from '../pages/Page2'
 import { PropTypePage } from '../pages/PropTypePage'
 import { Redux } from '../pages/Redux'
+import { Hooks } from '../pages/Hooks'
 
 export const BasicRouter = [
     {
@@ -27,8 +28,14 @@ export const BasicRouter = [
         children: <PropTypePage />,
     },
     {
+        path: 'Hooks',
+        exact: false,
+        children: <Hooks />,
+    },
+    {
         path: 'Redux',
         exact: false,
         children: <Redux />,
     },
+    
 ]

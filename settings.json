@@ -1,0 +1,43 @@
+// https://jsnotice.com/posts/2021-05-19/
+{
+    // SideBar Tree Indent
+    "workbench.tree.indent": 8,
+    // UIの非表示
+    // "breadcrumbs.enabled": false,
+    "editor.codeLens": false,
+    "editor.minimap.enabled": false,
+    // "editor.renderIndentGuides": false,
+    // "workbench.statusBar.visible": false,
+    // UIの細かい変更
+    "editor.glyphMargin": false,
+    "editor.folding": false,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#373f478e",
+        "editorLineNumber.foreground": "#5f6c798f",
+        "editorLineNumber.activeForeground": "#cad5e0b7"
+    },
+    // lint系に関する設定
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "css.validate": false,
+    // "stylelint.enable": true,
+    "editor.formatOnSave": false,
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // その他
+    "editor.emptySelectionClipboard": false,
+    "editor.renderControlCharacters": true,
+    "editor.tabSize": 2,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "files.exclude": {}
+}
