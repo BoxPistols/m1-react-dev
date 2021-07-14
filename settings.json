@@ -3,7 +3,7 @@
     // SideBar Tree Indent
     "workbench.tree.indent": 8,
     // UIの非表示
-    // "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": false,
     "editor.codeLens": false,
     "editor.minimap.enabled": false,
     // "editor.renderIndentGuides": false,
