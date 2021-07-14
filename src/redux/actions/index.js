@@ -1,11 +1,11 @@
-//  Action Creater
-export const PLUS = 'PLUS'
-export const MINUS = 'MINUS'
+//  Global 変数
+export const INC = 'INC'
+export const DEC = 'DEC'
 
-export const plus = () => ({
-    type: PLUS,
+//  Global 関数 for reducer / components
+export const inc = () => ({
+    type: INC,
 })
-
-export const minus = () => ({
-    type: MINUS,
+export const dec = () => ({
+    type: DEC,
 })

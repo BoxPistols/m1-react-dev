@@ -1,14 +1,13 @@
-import { PLUS, MINUS } from '../actions'
-
-const initialState = { num: 0 }
-
-export const count = (state = initialState, action) => {
+//  Load Global 変数 from Actions
+import { INC, DEC } from '../actions'
+// init
+const init = { num: 0 }
+//  Switch 指示書
+export const count = (state = init, action) => {
     switch (action.type) {
-        case PLUS:
-            // return state + action.payload.num
+        case INC:
             return { num: state.num + 1 }
-        case MINUS:
-            // return state - action.payload.num
+        case DEC:
             return { num: state.num - 1 }
         default:
             return state
