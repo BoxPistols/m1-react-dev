@@ -1,5 +1,17 @@
 import React from 'react'
-// import Reducers from '../../redux/reducers'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import ReduxApp from '../../redux/components/ReduxApp'
+import reducers from '../../redux/reducers'
+const store = createStore(reducers)
+
 export const Redux = () => {
-    return <div>Redux</div>
+    return (
+        <div>
+            <Provider store={store}>
+                <div>Redux</div>
+                <ReduxApp />
+            </Provider>
+        </div>
+    )
 }

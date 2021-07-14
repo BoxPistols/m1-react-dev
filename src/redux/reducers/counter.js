@@ -1,13 +1,15 @@
 import { PLUS, MINUS } from '../actions'
 
-const INITIAL_STATE = { num: 0 }
+const initialState = { num: 0 }
 
-export const count = (state = INITIAL_STATE, action) => {
+export const count = (state = initialState, action) => {
     switch (action.type) {
         case PLUS:
-            return state + action.payload.num
+            // return state + action.payload.num
+            return { num: state.num + 1 }
         case MINUS:
-            return state - action.payload.num
+            // return state - action.payload.num
+            return { num: state.num - 1 }
         default:
             return state
     }
